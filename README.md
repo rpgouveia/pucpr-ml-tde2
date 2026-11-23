@@ -22,11 +22,16 @@ src/tde2/
   config.py                 SEED, caminhos, colunas, métricas: único lugar para constantes
   data.py                   load_train(), load_test(), get_cv(), make_split(), verify_split()
   preprocessing.py          build_preprocessor(): ColumnTransformer NÃO ajustado
+  models.py                 membros, comitês, espaços de busca, tuned() / nested() / freeze()
+  evaluation.py             evaluate(), comparações pareadas, diversidade, custo, bootstrap
 scripts/make_split.py       gera/verifica a divisão
 notebooks/
   01_caracterizacao_dados.ipynb   seção 4.1 do relatório (pronto)
-  02_modelagem.ipynb              esqueleto com TODOs para a parte de código
-reports/figures/            figuras geradas pelos notebooks (PNG, para o relatório)
+  02_modelagem.ipynb              membros, comitês, ajuste, diversidade, erros, custo e teste (pronto)
+reports/
+  relatorio_tde2.pdf        relatório final entregável (9 páginas)
+  figures/                  figuras geradas pelos notebooks (PNG, para o relatório)
+  tables/                   tabelas do notebook 02 (CSV, para o relatório)
 ```
 
 ## Como rodar
@@ -96,7 +101,7 @@ rf = make_pipeline(build_preprocessor(scale=False),
 r = cross_validate(rf, X_train, y_train, cv=cv, scoring=C.SCORING)
 ```
 
-O esqueleto [notebooks/02_modelagem.ipynb](notebooks/02_modelagem.ipynb) já tem uma função `evaluate()`, que aplica as mesmas dobras e métricas e mede o tempo, e a linha de base da classe majoritária.
+O notebook [notebooks/02_modelagem.ipynb](notebooks/02_modelagem.ipynb) roda tudo em cerca de 2 minutos (`uv run jupyter nbconvert --to notebook --execute --inplace notebooks/02_modelagem.ipynb`). As decisões da parte de código estão registradas em [docs/PENDENCIAS.md](docs/PENDENCIAS.md).
 
 ## Decisões em aberto para a parte de código
 
@@ -112,13 +117,13 @@ O esqueleto [notebooks/02_modelagem.ipynb](notebooks/02_modelagem.ipynb) já tem
 - [x] Teste isolado para uso único, ao final
 - [x] Mesmas divisões para todas as alternativas
 - [x] Linha de base (classe majoritária) no esqueleto
-- [ ] Membros individuais avaliados nas mesmas condições dos comitês
-- [ ] Variabilidade reportada, com as diferenças afirmadas excedendo-a
-- [ ] Custo computacional (treino e predição) de cada alternativa
-- [ ] Matriz de confusão e análise de erros por classe
-- [ ] Diversidade medida e relacionada ao ganho
-- [ ] Notebook executa do início ao fim sem intervenção
+- [x] Membros individuais avaliados nas mesmas condições dos comitês
+- [x] Variabilidade reportada, com as diferenças afirmadas excedendo-a (critério em PENDENCIAS 2.1)
+- [x] Custo computacional (treino e predição) de cada alternativa
+- [x] Matriz de confusão e análise de erros por classe
+- [x] Diversidade medida e relacionada ao ganho
+- [x] Notebook executa do início ao fim sem intervenção
 
 ## Uso de IA generativa
 
-Conforme a seção 7 do enunciado, o relatório deve terminar com a declaração de uso de IA. A estrutura do repositório e o código de dados foram feitos com apoio do **Claude Code (Claude Opus 5.5)**. Os resultados experimentais e a redação da análise devem ser da equipe.
+Conforme a seção 7 do enunciado, o relatório deve terminar com a declaração de uso de IA. A estrutura do repositório, o código de dados e o código de modelagem foram feitos com apoio do **Claude Code (Claude Opus 5.5)**. Os resultados experimentais e a redação da análise devem ser da equipe.

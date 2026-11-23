@@ -18,6 +18,10 @@ FIGURES_DIR = ROOT / "reports" / "figures"
 SEED = 42
 TEST_SIZE = 1 / 3  # 1/3 separado no início e usado UMA única vez, ao final (612 treino / 306 teste)
 N_SPLITS = 10     # validação cruzada estratificada sobre o treino
+INNER_SPLITS = 5
+N_ITER = 20
+N_BOOTSTRAP = 1000
+ALPHA = 0.05
 
 # --- Esquema da base ----------------------------------------------------------
 TARGET = "HeartDisease"
