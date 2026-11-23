@@ -1,0 +1,30 @@
+alternativa,hiperparâmetro,valor
+Regressão logística,C,0.1695
+Regressão logística,class_weight,None
+KNN,n_neighbors,44
+KNN,p,1
+KNN,weights,distance
+SVM (RBF),estimator__C,13.15
+SVM (RBF),estimator__class_weight,None
+SVM (RBF),estimator__gamma,0.0004208
+Árvore de decisão,criterion,entropy
+Árvore de decisão,max_depth,10
+Árvore de decisão,min_samples_leaf,12
+Naive Bayes,var_smoothing,0.003372
+Toco de decisão,class_weight,None
+Toco de decisão,criterion,entropy
+Toco de decisão,min_samples_leaf,29
+Random Forest,max_depth,6
+Random Forest,max_features,log2
+Random Forest,min_samples_leaf,1
+Random Forest,n_estimators,363
+Bagging de árvores,estimator__max_depth,10
+Bagging de árvores,max_features,0.5497
+Bagging de árvores,max_samples,0.4967
+Bagging de árvores,n_estimators,50
+Gradient Boosting,learning_rate,0.04328
+Gradient Boosting,max_depth,5
+Gradient Boosting,n_estimators,320
+Gradient Boosting,subsample,0.866
+AdaBoost,learning_rate,0.1061
+AdaBoost,n_estimators,264
