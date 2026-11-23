@@ -1,6 +1,6 @@
 # Pendências para decidir em grupo
 
-**Entrega: hoje, 23/11/2026, até o início da Aula 14.**
+**Entrega: hoje, 23/11/2026**
 
 A parte de dados está pronta: base, divisão treino/teste, pré-processamento e caracterização. Como usar está no [README](../README.md). Abaixo estão as decisões que faltam, na ordem em que travam o trabalho. Anotem a decisão em cada item e façam commit deste arquivo, para ficar registrado o que foi combinado.
 
