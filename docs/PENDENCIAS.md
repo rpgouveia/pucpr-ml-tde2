@@ -94,4 +94,4 @@ Cada integrante informa quais ferramentas usou e para quê, para montar a declar
 
 - **Renato:** Claude Code (Claude Opus 5.5), para estruturação do repositório e depuração do código da parte de dados.
 - **Fernando:** Claude Code (Claude Opus 5.5), para a depuração do código da parte de modelagem (`src/tde2/models.py`, `src/tde2/evaluation.py`, `notebooks/02_modelagem.ipynb`) e explicação de conceitos.
-- **Ângelo:**
+- **Ângelo:** Antigravity (Google DeepMind), para suporte à redação técnica, formatação de tabelas, estruturação do relatório em PDF e conferência da rubrica.

@@ -28,8 +28,10 @@ scripts/make_split.py       gera/verifica a divisão
 notebooks/
   01_caracterizacao_dados.ipynb   seção 4.1 do relatório (pronto)
   02_modelagem.ipynb              membros, comitês, ajuste, diversidade, erros, custo e teste (pronto)
-reports/figures/            figuras geradas pelos notebooks (PNG, para o relatório)
-reports/tables/             tabelas do notebook 02 (CSV, para o relatório)
+reports/
+  relatorio_tde2.pdf        relatório final entregável (9 páginas)
+  figures/                  figuras geradas pelos notebooks (PNG, para o relatório)
+  tables/                   tabelas do notebook 02 (CSV, para o relatório)
 ```
 
 ## Como rodar
