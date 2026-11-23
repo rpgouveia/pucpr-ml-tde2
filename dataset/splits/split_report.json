@@ -1,0 +1,61 @@
+{
+  "seed": 42,
+  "test_size": 0.3333333333333333,
+  "stratified_by": "HeartDisease",
+  "n_total": 918,
+  "n_train": 612,
+  "n_test": 306,
+  "class_distribution": {
+    "total": {
+      "0": {
+        "n": 410,
+        "prop": 0.4466
+      },
+      "1": {
+        "n": 508,
+        "prop": 0.5534
+      }
+    },
+    "train": {
+      "0": {
+        "n": 273,
+        "prop": 0.4461
+      },
+      "1": {
+        "n": 339,
+        "prop": 0.5539
+      }
+    },
+    "test": {
+      "0": {
+        "n": 137,
+        "prop": 0.4477
+      },
+      "1": {
+        "n": 169,
+        "prop": 0.5523
+      }
+    }
+  },
+  "zeros_as_missing": {
+    "RestingBP": {
+      "train": 0,
+      "test": 1
+    },
+    "Cholesterol": {
+      "train": 109,
+      "test": 63
+    }
+  },
+  "sha256": {
+    "heart.csv": "948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b",
+    "train.csv": "bc45b8a898d73843e39663360682e855181324c985b5b79707f32625eb6821e4",
+    "test.csv": "d16977a960368c02ecb158128caa3c8808a450e108580a9457a0322f744307c1"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1"
+  }
+}
